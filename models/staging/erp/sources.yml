@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: erp
+    description: 'Essa é a fonte do sistema ERP da northwind com dados de verndas e transações.'
+    database: fea24_6
+    schema: raw_northwind
+    tables:
+      - name: employee
+        description: 'Tabela com dados de funcionarios.'
+        columns:
+          - name: id
+            description: 'Chave primaria da tabela funcionários.'
+            tests:
+              - unique
+              - not_null
+                  
